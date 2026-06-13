@@ -92,7 +92,7 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
       <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-md" onClick={onClose} />
 
       {/* Main container */}
-      <div className="relative z-10 w-full max-w-lg overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-2xl transition-all duration-300">
+      <div className="relative z-10 w-full max-w-lg overflow-y-auto max-h-[90vh] rounded-3xl border border-slate-800 bg-slate-900 shadow-2xl transition-all duration-300">
         
         {/* Header */}
         <div className="bg-slate-950 px-6 py-5 flex items-center justify-between border-b border-slate-900">
@@ -128,7 +128,7 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
           </div>
 
           {/* Contact details row */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Mobile Number */}
             <div className="space-y-1.5">
               <label className="text-xs font-semibold uppercase tracking-wider text-slate-400 block">
@@ -181,7 +181,7 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
             </select>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Preferred Time Slot */}
             <div className="space-y-1.5">
               <label className="text-xs font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1">

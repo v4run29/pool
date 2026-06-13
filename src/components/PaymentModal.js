@@ -36,7 +36,7 @@ export default function PaymentModal({ paymentInfo, onClose, onSuccess }) {
       <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-md" onClick={onClose} />
 
       {/* Razorpay container */}
-      <div className="relative z-10 w-full max-w-md overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-2xl transition-all duration-300">
+      <div className="relative z-10 w-full max-w-md overflow-y-auto max-h-[90vh] rounded-3xl border border-slate-800 bg-slate-900 shadow-2xl transition-all duration-300">
         
         {/* Header - Simulated Razorpay brand */}
         <div className="bg-slate-950 px-6 py-5 flex items-center justify-between border-b border-slate-900">

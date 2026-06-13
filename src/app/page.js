@@ -193,35 +193,35 @@ export default function Home() {
 
           {/* Main Titles */}
           <div className="space-y-4">
-            <h1 className="text-sm font-semibold tracking-widest text-slate-400 uppercase">
+            <h1 className="text-xs mob:text-sm font-semibold tracking-widest text-slate-400 uppercase">
               Dive Into Excellence
             </h1>
-            <p className="text-5xl sm:text-7xl font-extrabold tracking-tight text-white font-display">
+            <p className="text-4xl mob:text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white font-display">
               VWT <span className="bg-gradient-to-r from-cyan-400 via-cyan-200 to-blue-500 bg-clip-text text-transparent">SWIMMING POOL</span>
             </p>
-            <p className="max-w-2xl mx-auto text-lg sm:text-xl text-slate-300 font-light">
+            <p className="max-w-2xl mx-auto text-sm mob:text-base sm:text-lg lg:text-xl text-slate-300 font-light">
               Experience the pinnacle of aquatic luxury and training. Immerse yourself in advanced climate-controlled waters guided by elite coaches.
             </p>
           </div>
 
           {/* Interactive CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mob:gap-4 pt-4 w-full max-w-md mx-auto sm:max-w-none">
             <button
               onClick={() => handleOpenBooking({ name: "Monthly Membership" })}
-              className="w-full sm:w-auto rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] px-8 py-4.5 text-slate-950 font-extrabold tracking-wide transition-all transform hover:-translate-y-0.5 cursor-pointer"
+              className="w-full sm:w-auto rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] px-6 py-3.5 mob:px-8 mob:py-4.5 text-slate-950 font-extrabold tracking-wide transition-all transform hover:-translate-y-0.5 cursor-pointer"
             >
               Join Now
             </button>
             <button
               onClick={() => handleOpenBooking(null)}
-              className="w-full sm:w-auto rounded-2xl border border-slate-800 bg-slate-900/40 hover:bg-slate-800 backdrop-blur-md px-8 py-4.5 text-white font-semibold transition-colors cursor-pointer"
+              className="w-full sm:w-auto rounded-2xl border border-slate-800 bg-slate-900/40 hover:bg-slate-800 backdrop-blur-md px-6 py-3.5 mob:px-8 mob:py-4.5 text-white font-semibold transition-colors cursor-pointer"
             >
               Book Swimming Session
             </button>
           </div>
 
           {/* Features Badges row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-16 border-t border-slate-900/60">
+          <div className="grid grid-cols-1 mob:grid-cols-2 md:grid-cols-4 gap-3 mob:gap-4 max-w-4xl mx-auto pt-16 border-t border-slate-900/60">
             <div className="flex items-center gap-3 rounded-2xl border border-slate-900 bg-slate-950/40 p-4 backdrop-blur-md">
               <Award className="h-5 w-5 text-cyan-400" />
               <span className="text-xs font-semibold text-slate-300">Certified Trainers</span>
@@ -264,7 +264,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {/* Card 1: Coaches */}
           <div className="rounded-3xl border border-slate-900 bg-slate-950/40 p-8 backdrop-blur-md hover:border-slate-800 transition-colors">
             <div className="h-12 w-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/20 text-cyan-400 mb-6">
@@ -510,7 +510,7 @@ export default function Home() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 mob:grid-cols-2 md:grid-cols-3 gap-4 mob:gap-6">
           {galleryItems.map((item) => (
             <div
               key={item.id}
@@ -648,7 +648,7 @@ export default function Home() {
 
       {/* 7. ABOUT VWT SWIMMING POOL */}
       <section id="about" className="relative py-24 z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           
           {/* Text panel */}
           <div className="space-y-6">
@@ -697,10 +697,10 @@ export default function Home() {
 
       {/* 8. CONTACT SECTION */}
       <section id="contact" className="relative py-24 z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           
           {/* Information Block - Left 5 columns */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="md:col-span-5 space-y-6 mob:space-y-8">
             <div>
               <h2 className="text-base font-semibold uppercase tracking-widest text-cyan-400">
                 GET IN TOUCH
@@ -812,7 +812,7 @@ export default function Home() {
           </div>
 
           {/* Contact Form - Right 7 columns */}
-          <div className="lg:col-span-7 rounded-3xl border border-slate-800 bg-slate-950/40 p-8 backdrop-blur-md">
+          <div className="md:col-span-7 rounded-3xl border border-slate-800 bg-slate-950/40 p-6 mob:p-8 backdrop-blur-md">
             {contactSuccess ? (
               <div className="p-8 text-center space-y-4">
                 <div className="h-16 w-16 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto">
@@ -894,10 +894,10 @@ export default function Home() {
 
       {/* 9. FOOTER SECTION */}
       <footer className="relative z-10 border-t border-slate-900 bg-slate-950 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
           
           {/* Logo Column */}
-          <div className="col-span-2 space-y-4">
+          <div className="col-span-1 sm:col-span-3 md:col-span-2 space-y-4">
             <a href="#" className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-400 to-blue-600 p-0.5">
                 <div className="flex h-full w-full items-center justify-center rounded-[7px] bg-slate-950 text-cyan-400">

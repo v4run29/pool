@@ -4,6 +4,13 @@
   --font-sans: var(--font-inter), sans-serif;
   --font-display: var(--font-space-grotesk), sans-serif;
   
+  /* Custom Viewport Breakpoints */
+  --breakpoint-mob: 376px;    /* Large Mobile */
+  --breakpoint-sm: 481px;     /* Tablet */
+  --breakpoint-md: 769px;     /* Small Laptop */
+  --breakpoint-lg: 1025px;    /* Desktop */
+  --breakpoint-xl: 1441px;    /* Large Desktop */
+
   /* Animated floats */
   --animate-float: float 6s ease-in-out infinite;
   --animate-float-delayed: float-delayed 6s ease-in-out infinite;

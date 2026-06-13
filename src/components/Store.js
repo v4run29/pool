@@ -50,7 +50,7 @@ export default function Store({ cartOpen, onCloseCart, onOpenPayment }) {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 gap-y-12 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-y-8 gap-x-6 sm:grid-cols-2 md:grid-cols-3 md:gap-y-12 md:gap-x-8">
         {products.map((product) => {
           const isWishlisted = wishlist.includes(product.id);
           const showReviews = activeReviewsId === product.id;
@@ -163,7 +163,7 @@ export default function Store({ cartOpen, onCloseCart, onOpenPayment }) {
         <div className="fixed inset-0 z-50 overflow-hidden">
           <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" onClick={onCloseCart} />
           
-          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+          <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-0 sm:pl-10">
             <div className="pointer-events-auto w-screen max-w-md transform bg-slate-950 border-l border-slate-850 p-6 shadow-2xl flex flex-col h-full relative z-50">
               <div className="flex items-center justify-between border-b border-slate-900 pb-5">
                 <h3 className="text-2xl font-bold text-white flex items-center gap-2">
