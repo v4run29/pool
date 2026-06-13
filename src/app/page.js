@@ -37,39 +37,33 @@ import {
 const galleryItems = [
   {
     id: 1,
-    title: "Luxury Olympic Pool",
+    title: "Main Training Pool",
     category: "Swimming Pool",
-    image: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80"
+    image: "/pool_gallery_1.png"
   },
   {
     id: 2,
-    title: "Pro Training Session",
-    category: "Training Sessions",
-    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80"
+    title: "Crystal Clean Waters",
+    category: "Club Standards",
+    image: "/pool_gallery_2.png"
   },
   {
     id: 3,
-    title: "Toddlers Academy",
-    category: "Kids Swimming",
-    image: "https://images.unsplash.com/photo-1564053489984-317bbd824340?auto=format&fit=crop&w=800&q=80"
+    title: "Lap Swimmers Zone",
+    category: "Olympic Lanes",
+    image: "/pool_gallery_3.png"
   },
   {
     id: 4,
-    title: "Speed Endurance Drill",
-    category: "Professional Swimmers",
-    image: "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=800&q=80"
+    title: "Kids Splash Academy",
+    category: "Kids Swimming",
+    image: "/pool_gallery_4.png"
   },
   {
     id: 5,
-    title: "Inter-Club Gala Meet",
-    category: "Pool Events",
-    image: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    id: 6,
-    title: "Glow Night Sessions",
-    category: "Night Pool Lighting",
-    image: "https://images.unsplash.com/photo-1542662565-7e4b66bae529?auto=format&fit=crop&w=800&q=80"
+    title: "Toddlers Fun Zone",
+    category: "Coaching",
+    image: "/pool_gallery_5.png"
   }
 ];
 
