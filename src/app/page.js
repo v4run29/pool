@@ -64,6 +64,12 @@ const galleryItems = [
     title: "Toddlers Fun Zone",
     category: "Coaching",
     image: "/pool_gallery_5.png"
+  },
+  {
+    id: 6,
+    title: "Gala Swim Session",
+    category: "Recreation",
+    image: "/pool_gallery_6.png"
   }
 ];
 
