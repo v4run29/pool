@@ -693,11 +693,11 @@ export default function Home() {
                 </div>
                 <div>
                   <h5 className="font-bold text-white text-sm">Phone Number</h5>
-                  <p className="text-sm text-slate-400 mt-0.5">+91 98765 43210</p>
+                  <p className="text-sm text-slate-400 mt-0.5">+91 7075419</p>
                   
                   {/* WhatsApp button */}
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/917075419"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 mt-1 transition-colors"
