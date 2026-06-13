@@ -11,8 +11,8 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
     name: "",
     mobile: "",
     email: "",
-    membershipType: "Monthly Premium Membership",
-    preferredTimeSlot: "Morning 5 AM - 8 AM",
+    membershipType: "Monthly Membership",
+    preferredTimeSlot: "Morning Session (6 AM - 12 PM)",
     startDate: ""
   });
 
@@ -45,12 +45,12 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
 
   const getPlanPrice = (planName) => {
     switch (planName) {
-      case "Daily Pass":
+      case "1 Hour Swimming Pass":
         return 100;
       case "Weekly Pass":
         return 650;
-      case "Monthly Premium Membership":
       case "Monthly Membership":
+      case "Monthly Premium Membership":
       default:
         return 2000;
     }
@@ -175,9 +175,9 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
               onChange={(e) => setFormData({ ...formData, membershipType: e.target.value })}
               className="w-full rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3.5 text-sm text-white focus:border-cyan-500 focus:outline-none"
             >
-              <option value="Daily Pass">Daily Pass — ₹100</option>
+              <option value="1 Hour Swimming Pass">1 Hour Swimming Pass — ₹100</option>
               <option value="Weekly Pass">Weekly Pass — ₹650</option>
-              <option value="Monthly Premium Membership">Monthly Premium Membership — ₹2000</option>
+              <option value="Monthly Membership">Monthly Membership — ₹2000</option>
             </select>
           </div>
 
@@ -193,10 +193,8 @@ export default function BookingForm({ selectedPlan, onClose, onOpenPayment }) {
                 onChange={(e) => setFormData({ ...formData, preferredTimeSlot: e.target.value })}
                 className="w-full rounded-2xl border border-slate-800 bg-slate-950 px-4 py-3.5 text-sm text-white focus:border-cyan-500 focus:outline-none"
               >
-                <option value="Morning 5 AM - 8 AM">Morning 5 AM - 8 AM</option>
-                <option value="Morning 8 AM - 11 AM">Morning 8 AM - 11 AM</option>
-                <option value="Evening 4 PM - 7 PM">Evening 4 PM - 7 PM</option>
-                <option value="Evening 7 PM - 10 PM">Evening 7 PM - 10 PM</option>
+                <option value="Morning Session (6 AM - 12 PM)">Morning Session (6 AM - 12 PM)</option>
+                <option value="Evening Session (12 PM - 7 PM)">Evening Session (12 PM - 7 PM)</option>
               </select>
             </div>
 

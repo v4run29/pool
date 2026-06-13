@@ -349,40 +349,36 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           
-          {/* Card 1: Daily Pass */}
+          {/* Card 1: 1 Hour Swimming Pass */}
           <div className="rounded-3xl border border-slate-900 bg-slate-950/40 p-8 backdrop-blur-md flex flex-col justify-between hover:border-slate-800/80 transition-all duration-300 group">
             <div>
               <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Single Access</span>
-              <h4 className="text-2xl font-bold text-white mt-2">Daily Pass</h4>
-              <p className="text-slate-400 text-xs mt-1">Perfect for casual visitors and trial swim laps.</p>
+              <h4 className="text-2xl font-bold text-white mt-2">1 Hour Swimming Pass</h4>
+              <p className="text-slate-400 text-xs mt-1">Perfect for casual visitors and quick swim sessions.</p>
               
               <div className="my-8">
                 <span className="text-4xl font-extrabold text-white">₹100</span>
-                <span className="text-slate-400 text-sm"> / Day</span>
+                <span className="text-slate-400 text-sm"> / Hour</span>
               </div>
 
               <ul className="space-y-3.5 text-sm text-slate-300">
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Full Day Pool Access</span>
+                  <span>Pool Access for 1 Hour</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Clean Changing Rooms</span>
+                  <span>Clean & Safe Environment</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Locker Facility</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Lifeguard Support</span>
+                  <span>Lifeguard Supervision</span>
                 </li>
               </ul>
             </div>
 
             <button
-              onClick={() => handleOpenBooking({ name: "Daily Pass" })}
+              onClick={() => handleOpenBooking({ name: "1 Hour Swimming Pass" })}
               className="mt-8 w-full rounded-2xl border border-slate-800 bg-slate-900/60 hover:bg-slate-800 text-white font-semibold py-3.5 transition-colors cursor-pointer"
             >
               Book Now
@@ -394,7 +390,7 @@ export default function Home() {
             <div>
               <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Short-Term Access</span>
               <h4 className="text-2xl font-bold text-white mt-2">Weekly Pass</h4>
-              <p className="text-slate-400 text-xs mt-1">Great for travelers or visitors in town.</p>
+              <p className="text-slate-400 text-xs mt-1">Great for travelers or regular swimmers.</p>
               
               <div className="my-8">
                 <span className="text-4xl font-extrabold text-white">₹650</span>
@@ -404,19 +400,11 @@ export default function Home() {
               <ul className="space-y-3.5 text-sm text-slate-300">
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>7 Days Unlimited Access</span>
+                  <span>Unlimited Access for 7 Days</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Locker Facility</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Flexible Timings</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Trainer Guidance</span>
+                  <span>Flexible Timings (6 AM – 7 PM)</span>
                 </li>
               </ul>
             </div>
@@ -429,7 +417,7 @@ export default function Home() {
             </button>
           </div>
 
-          {/* Card 3: Monthly Premium Membership */}
+          {/* Card 3: Monthly Membership */}
           <div className="relative rounded-3xl border-2 border-cyan-500 bg-slate-950 p-8 shadow-[0_0_30px_rgba(6,182,212,0.15)] flex flex-col justify-between hover:shadow-[0_0_40px_rgba(6,182,212,0.25)] transition-all duration-300 group">
             {/* Most popular badge */}
             <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-cyan-500 px-4 py-1 text-xs font-bold text-slate-950 tracking-wider uppercase animate-pulse">
@@ -437,51 +425,35 @@ export default function Home() {
             </span>
             <div>
               <span className="text-xs font-bold text-cyan-400 uppercase tracking-widest">Full Elite Access</span>
-              <h4 className="text-2xl font-bold text-white mt-2">Monthly Premium</h4>
+              <h4 className="text-2xl font-bold text-white mt-2">Monthly Membership</h4>
               <p className="text-slate-400 text-xs mt-1">Our comprehensive package for full development.</p>
               
               <div className="my-8">
-                <span className="text-4xl font-extrabold text-white">₹2000</span>
+                <span className="text-4xl font-extrabold text-white">₹2,000</span>
                 <span className="text-slate-400 text-sm"> / Month</span>
               </div>
 
               <ul className="space-y-3.5 text-sm text-slate-300">
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>30 Days Unlimited Access</span>
+                  <span>Unlimited Access for 30 Days</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Professional Swimming Coaching</span>
+                  <span>Priority Entry</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Priority Pool Access</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Personal Training Support</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Locker Facility</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Fitness Guidance</span>
-                </li>
-                <li className="flex items-center gap-2.5">
-                  <Check className="h-4.5 w-4.5 text-cyan-400 shrink-0" />
-                  <span>Premium Member Benefits</span>
+                  <span>Premium Facilities</span>
                 </li>
               </ul>
             </div>
 
             <button
-              onClick={() => handleOpenBooking({ name: "Monthly Premium Membership" })}
+              onClick={() => handleOpenBooking({ name: "Monthly Membership" })}
               className="mt-8 w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-[0_0_20px_rgba(6,182,212,0.3)] text-slate-950 font-bold py-3.5 transition-all cursor-pointer"
             >
-              Become Member
+              Become Premium Member
             </button>
           </div>
 
@@ -754,9 +726,9 @@ export default function Home() {
                 </div>
                 <div>
                   <h5 className="font-bold text-white text-sm">Business Hours</h5>
-                  <p className="text-sm text-slate-300 mt-0.5">Morning: 5:00 AM — 11:00 AM</p>
-                  <p className="text-sm text-slate-300">Evening: 4:00 PM — 10:00 PM</p>
-                  <p className="text-xs text-slate-500 mt-0.5 font-semibold">Open Daily (Sunday Included)</p>
+                  <p className="text-sm text-slate-300 mt-0.5">Morning Session: 6:00 AM — 12:00 PM</p>
+                  <p className="text-sm text-slate-300">Evening Session: 12:00 PM — 7:00 PM</p>
+                  <p className="text-xs text-slate-500 mt-0.5 font-semibold">Open Daily: 6:00 AM — 7:00 PM</p>
                 </div>
               </div>
             </div>
@@ -932,7 +904,7 @@ export default function Home() {
           <div className="space-y-3">
             <h5 className="text-xs font-bold text-slate-400 uppercase tracking-widest">Memberships</h5>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><button onClick={() => handleOpenBooking({ name: "Daily Pass" })} className="hover:text-cyan-400 text-left transition-colors">Daily Pass</button></li>
+              <li><button onClick={() => handleOpenBooking({ name: "1 Hour Swimming Pass" })} className="hover:text-cyan-400 text-left transition-colors">1 Hour Swimming Pass</button></li>
               <li><button onClick={() => handleOpenBooking({ name: "Weekly Pass" })} className="hover:text-cyan-400 text-left transition-colors">Weekly Pass</button></li>
               <li><button onClick={() => handleOpenBooking({ name: "Monthly Membership" })} className="hover:text-cyan-400 text-left transition-colors">Monthly Membership</button></li>
             </ul>
